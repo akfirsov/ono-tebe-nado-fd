@@ -12,6 +12,8 @@
 
 .header-menu{
   justify-self: start;
+  margin-bottom: 5px;
+  
 }
 
 .header__menu-list{
@@ -21,9 +23,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 2px;
   text-decoration-thickness: 1px;
-    
+  text-underline-offset: 4px;
 }
 
 .header__menu-item:not(:last-child)::after {
@@ -41,6 +42,7 @@ ul{
 .header__logo {
   justify-self: center; 
 }
+
 .header__logo-image {
   width: auto;
   height: 105px;
@@ -67,14 +69,15 @@ ul{
   max-width: 240px;
   font-style: normal;
   flex-direction: column;
-  margin-right: 25px;
-  margin-bottom: 11px;
+  margin-right: 26px;
+  margin-bottom: 13px;
 }
-.header__address .email
+
+.header__address .email, .header__address .address
 {
   font-size: 18px;
 }
-/* */
+
 /*COVER*/
 
 .cover{
@@ -130,10 +133,10 @@ ul{
   margin-top: 19px;
   margin-left: 15px;}
 
-  .aligned-text_right {
-    grid-area: cover_article_right;
-    display: grid;
-    margin-top: 20px;
+.aligned-text_right {
+  grid-area: cover_article_right;
+  display: grid;
+  margin-top: 20px;
 }
 
 .cover__description-text {
@@ -186,13 +189,14 @@ ul{
 }
 
 
+
+
+
+
 .lots__heading{
   margin-bottom: 27px;
   margin-left: 40px;
   text-transform: uppercase;
-}
-
-.lots__heading, .about_container_tex_title{
   font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
@@ -213,8 +217,7 @@ ul{
 }
 
 .lots_content {
-  display: grid
-;
+  display: grid;
   grid-template-columns: repeat(3, 33%);
   height: 596px;
   gap: 12px;
@@ -338,7 +341,7 @@ ul{
   height: 143px;
 }
 
-.lots__heading, .about_container_tex_title {
+.about_container_tex_title {
   font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
@@ -355,16 +358,14 @@ ul{
 footer {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  display: grid
-;
+  display: grid;
   align-items: start;
   margin-top: 180px;
   height: 180px;
 }
 
 .footer_address {
-  display: flex
-;
+  display: flex;
   flex-direction: column;
   justify-content: start;
   width: 237px;
@@ -389,8 +390,7 @@ footer {
 }
 
 .footer_social {
-  display: flex
-;
+  display: flex;
   gap: 35px;
   margin-left: 13px;
 }
