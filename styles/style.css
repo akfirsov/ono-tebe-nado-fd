@@ -63,14 +63,19 @@ ul{
 
 .header__address{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   justify-self: end;
-  width: 181px;
+  width: 214px;
   max-width: 240px;
   font-style: normal;
+  flex-direction: column;
+  margin-right: 25px;
+  margin-bottom: 11px;
 }
-
+.header__address .email
+{
+  font-size: 18px;
+}
+/* */
 /*COVER*/
 
 .cover{
@@ -87,8 +92,9 @@ ul{
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2
 }
-.cover_article{
-  display: grid;
+.cover_article {
+  display: grid
+;
   color: white;
   position: absolute;
   z-index: 2;
@@ -97,32 +103,38 @@ ul{
   font-weight: 700;
   line-height: 115px;
   letter-spacing: 0.3em;
-  text-align: center;
+  /* text-align: center; */
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
   grid-template-areas:
-    "cover_article_left . ."
-    ". cover_article_center ."
-    ". . cover_article_right";
+      "cover_article_left . ."
+      ". cover_article_center ."
+      ". . cover_article_right";
   margin-top: 165px;
   margin-bottom: 106px;
   position: absolute;
-  left: 51%;
-  transform: translateX(-50%);
+  /* left: 51%; */
+  /* transform: translateX(-50%); */
+  grid-template-columns: 365px 299px 435px;
 }
 
 .aligned-text{
   grid-area: cover_article_left;
   display: grid;
+  margin-top: 1px;
+  margin-left: 50px;
 }
-.aligned-text_center{
+.aligned-text_center {
   grid-area: cover_article_center;
   display: grid;
-}
-.aligned-text_right{
-  grid-area: cover_article_right;
-  display: grid;
+  margin-top: 19px;
+  margin-left: 15px;}
+
+  .aligned-text_right {
+    grid-area: cover_article_right;
+    display: grid;
+    margin-top: 20px;
 }
 
 .cover__description-text {
@@ -130,7 +142,7 @@ ul{
   display: grid;
   grid-template-columns: auto auto; /* 2 столбца */
   align-items: center;
-  gap: 20px;
+  gap: 25px;
   color: white;
   z-index: 2;
   margin-top: 656px;
@@ -164,6 +176,7 @@ ul{
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-transform: uppercase;
 }
 
 /*LOTS*/
@@ -177,6 +190,7 @@ ul{
 .lots__heading{
   margin-bottom: 27px;
   margin-left: 40px;
+  text-transform: uppercase;
 }
 
 .lots__heading, .about_container_tex_title{
@@ -187,13 +201,24 @@ ul{
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-transform: uppercase;
 }
 
-.lots_content{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.lots_content_box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-transform: uppercase;
+}
+
+.lots_content {
+  display: grid
+;
+  grid-template-columns: repeat(3, 33%);
   height: 596px;
-  gap: 25p;
+  gap: 12px;
 }
 
 .lots_content_box{
@@ -295,7 +320,14 @@ ul{
 
 }
 
-.about_container_text_describe{
+.about_container_text_all {
+  margin-top: 99px;
+  margin-left: 8px;
+  display: grid;
+}
+
+
+.about_container_text_describe {
   color: black;
   font-family: Raleway;
   font-size: 20px;
@@ -304,33 +336,52 @@ ul{
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
+  height: 143px;
 }
 
+.lots__heading, .about_container_tex_title {
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-left: 8px;}
+  
 /*FOOTER*/
 
-footer{
-  grid-template-columns: 1fr 2fr 1fr;
+footer {
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  display: grid;
+  display: grid
+;
   align-items: start;
   margin-top: 180px;
   height: 180px;
-
 }
 
-.footer_address{
-  display: flex;
+.footer_address {
+  display: flex
+;
   flex-direction: column;
   justify-content: start;
-  width: 181px;
+  width: 237px;
   max-width: 240px;
   font-style: normal;
+  margin-left: -28px;
 }
 
 .footer__menu{
   display: flex;
   text-align: center;
+  margin-top: 1px;
+  margin-left: 2px;
+  font-size: 18px;
+  flex-direction: column; /* Элементы расположены вертикально */
+  gap: 20px;
 }
 
 .footer_social img{
@@ -338,7 +389,11 @@ footer{
   height: 48px;
 }
 
-.footer_social{
-  display: flex;
-  gap: 48px;
+.footer_social {
+  display: flex
+;
+  gap: 35px;
+  margin-left: 13px;
 }
+
+
