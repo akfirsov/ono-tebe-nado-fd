@@ -1,4 +1,3 @@
-
 /*HEADER*/
 
 .header {
@@ -10,16 +9,16 @@
   gap: 20px
 }
 
-.header-menu{
+.header-menu {
   justify-self: start;
   margin-bottom: 5px;
-  
+
 }
 
-.header__menu-list{
+.header__menu-list {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  font-weight: 400; 
+  font-weight: 400;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -31,17 +30,18 @@
 .header__menu-item:not(:last-child)::after {
   content: "○";
   margin: 0 10px;
-  font-size: 0.8em; 
+  font-size: 0.8em;
   vertical-align: middle;
 
 }
 
 
-ul{
+ul {
   list-style: none;
 }
+
 .header__logo {
-  justify-self: center; 
+  justify-self: center;
 }
 
 .header__logo-image {
@@ -49,7 +49,9 @@ ul{
   height: 105px;
 }
 
-.numbers, .email, .lots__look-more-link{
+.numbers,
+.email,
+.lots__look-more-link {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
@@ -76,30 +78,30 @@ ul{
   margin-left: 172px;
 }
 
-.header__address .email, .header__address .address
-{
+.header__address .email,
+.header__address .address {
   font-size: 18px;
 }
 
 /*COVER*/
 
-.cover{
+.cover {
   position: relative;
   height: 757px;
   background: url("../images/cover.jpg") no-repeat center / cover;
   z-index: 0;
 }
 
-.overlay{
+.overlay {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2
 }
+
 .cover_article {
-  display: grid
-;
+  display: grid;
   color: white;
   position: absolute;
   z-index: 2;
@@ -113,9 +115,9 @@ ul{
   text-decoration-skip-ink: none;
   text-transform: uppercase;
   grid-template-areas:
-      "cover_article_left . ."
-      ". cover_article_center ."
-      ". . cover_article_right";
+    "cover_article_left . ."
+    ". cover_article_center ."
+    ". . cover_article_right";
   margin-top: 165px;
   margin-bottom: 106px;
   position: absolute;
@@ -124,17 +126,19 @@ ul{
   grid-template-columns: 365px 299px 435px;
 }
 
-.aligned-text{
+.aligned-text {
   grid-area: cover_article_left;
   display: grid;
   margin-top: 1px;
   margin-left: 50px;
 }
+
 .aligned-text_center {
   grid-area: cover_article_center;
   display: grid;
   margin-top: 19px;
-  margin-left: 15px;}
+  margin-left: 15px;
+}
 
 .aligned-text_right {
   grid-area: cover_article_right;
@@ -145,7 +149,8 @@ ul{
 .cover__description-text {
   position: absolute;
   display: grid;
-  grid-template-columns: auto auto; /* 2 столбца */
+  grid-template-columns: auto auto;
+  /* 2 столбца */
   align-items: center;
   gap: 25px;
   color: white;
@@ -154,7 +159,7 @@ ul{
   grid-template-columns: 3fr 1fr;
 }
 
-.cover__description-text p{
+.cover__description-text p {
   margin-left: 50px;
   font-family: Raleway;
   font-size: 22px;
@@ -173,7 +178,7 @@ ul{
   color: #fff;
   border: 1px solid white;
   height: 51px;
-  width: 256px; 
+  width: 256px;
   font-family: Raleway;
   font-size: 22px;
   font-weight: 500;
@@ -186,13 +191,13 @@ ul{
 
 /*LOTS*/
 
-.lots{
+.lots {
   margin: 180px 24px 120px;
   height: 723px;
 }
 
 
-.lots__heading{
+.lots__heading {
   margin-bottom: 27px;
   margin-left: 40px;
   text-transform: uppercase;
@@ -222,7 +227,7 @@ ul{
   gap: 12px;
 }
 
-.lots_content_box{
+.lots_content_box {
   display: grid;
   height: 596px;
   width: 334px;
@@ -232,13 +237,13 @@ ul{
 }
 
 .lots_content_box h3,
-.lots_content_box p{
-  color: #fff;  
+.lots_content_box p {
+  color: #fff;
 }
 
 .lots_content_box h3,
 .lots_content_box p,
-.about_container_text_describe{
+.about_container_text_describe {
   position: relative;
   font-family: Raleway;
   text-align: left;
@@ -248,7 +253,7 @@ ul{
 }
 
 
-.lots_content_box h3{
+.lots_content_box h3 {
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
@@ -256,7 +261,7 @@ ul{
   text-decoration-style: solid;
 }
 
-.lots_content_box p{
+.lots_content_box p {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -264,7 +269,7 @@ ul{
 
 .lots_content_box_left,
 .lots_content_box_center,
-.lots_content_box_right{
+.lots_content_box_right {
   position: relative;
   z-index: 0;
 }
@@ -273,15 +278,15 @@ ul{
   background: url("../images/card-lot-01.jpg") no-repeat center / cover;
 }
 
-.lots_content_box_center{
+.lots_content_box_center {
   background: url("../images/card-lot-02.jpg") no-repeat center / cover;
 }
 
-.lots_content_box_right{
+.lots_content_box_right {
   background: url("../images/card-lot-03.jpg") no-repeat center / cover;
 }
 
-.lots__look-more-link{
+.lots__look-more-link {
   display: block;
   margin-top: 30px;
   margin-left: 40px;
@@ -291,12 +296,13 @@ ul{
 
 /*ABOUT*/
 
-.about{
+.about {
   display: grid;
   height: 595px;
   grid-template-columns: 1fr 2fr;
   margin: 0 24px;
 }
+
 .circle {
   width: 240px;
   height: 240px;
@@ -314,7 +320,7 @@ ul{
   height: auto;
 }
 
-.about_container_text{
+.about_container_text {
   display: grid;
   width: 693px;
   height: 449px;
@@ -353,8 +359,9 @@ ul{
   text-decoration-skip-ink: none;
   text-transform: uppercase;
   margin-top: 4px;
-  margin-left: 8px;}
-  
+  margin-left: 8px;
+}
+
 /*FOOTER*/
 
 footer {
@@ -380,20 +387,22 @@ footer {
 }
 
 .footer_address .email,
-.header__address .email{
+.header__address .email {
   margin-bottom: 1px;
 }
-.footer__menu{
+
+.footer__menu {
   display: flex;
   text-align: center;
   margin-top: 1px;
   margin-left: 2px;
   font-size: 18px;
-  flex-direction: column; /* Элементы расположены вертикально */
+  flex-direction: column;
+  /* Элементы расположены вертикально */
   gap: 20px;
 }
 
-.footer_social img{
+.footer_social img {
   width: 48px;
   height: 48px;
 }
@@ -404,8 +413,7 @@ footer {
   margin-left: 13px;
 }
 
-.footer__menu ul{
+.footer__menu ul {
   line-height: 21px;
   text-underline-offset: 4px;
 }
-
