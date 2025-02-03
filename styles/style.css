@@ -25,6 +25,7 @@
   align-items: center;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+  margin-top: -7px;
 }
 
 .header__menu-item:not(:last-child)::after {
@@ -62,15 +63,17 @@ ul{
   text-decoration-thickness: 1px;
 }
 
-.header__address{
+.header__address {
   display: flex;
-  justify-self: end;
-  width: 214px;
-  max-width: 240px;
-  font-style: normal;
   flex-direction: column;
-  margin-right: 26px;
-  margin-bottom: 13px;
+  justify-content: start;
+  width: 237px;
+  max-width: 214px;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: -5px;
+  line-height: 24px;
+  margin-left: 172px;
 }
 
 .header__address .email, .header__address .address
@@ -162,7 +165,7 @@ ul{
   text-decoration-skip-ink: none;
   text-transform: uppercase;
   word-spacing: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 
 .bet-button {
@@ -187,10 +190,6 @@ ul{
   margin: 180px 24px 120px;
   height: 723px;
 }
-
-
-
-
 
 
 .lots__heading{
@@ -286,6 +285,8 @@ ul{
   display: block;
   margin-top: 30px;
   margin-left: 40px;
+  font-size: 20px;
+  text-underline-offset: 3px;
 }
 
 /*ABOUT*/
@@ -339,6 +340,7 @@ ul{
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   height: 143px;
+  width: 690px;
 }
 
 .about_container_tex_title {
@@ -371,9 +373,16 @@ footer {
   width: 237px;
   max-width: 240px;
   font-style: normal;
+  font-size: 18px;
+  margin-top: 0px;
+  line-height: 24px;
   margin-left: -28px;
 }
 
+.footer_address .email,
+.header__address .email{
+  margin-bottom: 1px;
+}
 .footer__menu{
   display: flex;
   text-align: center;
@@ -395,4 +404,8 @@ footer {
   margin-left: 13px;
 }
 
+.footer__menu ul{
+  line-height: 21px;
+  text-underline-offset: 4px;
+}
 
