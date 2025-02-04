@@ -346,6 +346,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   padding-left: 15px;
+  margin-bottom: 82px;
 }
 
 .footer__menu {
